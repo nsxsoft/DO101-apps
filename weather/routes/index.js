@@ -7,7 +7,7 @@ const UNITS = process.env.UNITS || 'metric';
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { weather: null, err: null });
+    res.render('index', { weather: null, err: null });
 });
 
 router.post('/get_weather', async function (req,res) {
